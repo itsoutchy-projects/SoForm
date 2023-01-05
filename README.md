@@ -6,4 +6,3 @@ This is a social platform like no other, it has a responsible developer (yes I a
 
 # How can I see this?
 Go to https://soform-8fd75.web.app/
-NOTE: It is currently down due to 404 errors, but will be up soon.
