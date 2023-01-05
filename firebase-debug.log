@@ -1,0 +1,44 @@
+[debug] [2023-01-05T18:32:33.839Z] ----------------------------------------------------------------------
+[debug] [2023-01-05T18:32:33.840Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\trace\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-01-05T18:32:33.841Z] CLI Version:   11.19.0
+[debug] [2023-01-05T18:32:33.841Z] Platform:      win32
+[debug] [2023-01-05T18:32:33.841Z] Node Version:  v16.15.0
+[debug] [2023-01-05T18:32:33.842Z] Time:          Thu Jan 05 2023 18:32:33 GMT+0000 (Greenwich Mean Time)
+[debug] [2023-01-05T18:32:33.842Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-05T18:32:33.901Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-05T18:32:33.901Z] > authorizing via signed-in user (tracey332000@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\trace\Downloads\soform
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-05T18:32:40.371Z] Using project from CLI flag: soform-8fd75
+[debug] [2023-01-05T18:32:40.373Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/soform-8fd75 [none]
+[debug] [2023-01-05T18:32:40.640Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/soform-8fd75 200
+[debug] [2023-01-05T18:32:40.641Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/soform-8fd75 {"projectId":"soform-8fd75","projectNumber":"947230533809","displayName":"soform","name":"projects/soform-8fd75","resources":{"hostingSite":"soform-8fd75","realtimeDatabaseInstance":"soform-8fd75-default-rtdb"},"state":"ACTIVE","etag":"1_f9d76e4e-1641-4bc1-a2a5-1b4b6d45b0b0"}
+[info] i  Using project soform-8fd75 (soform) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

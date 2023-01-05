@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoForm: A social platform</title>
+    <link rel="icon" href="images/logo-white.png">
+    <style>
+        #home>img {
+            display: block;
+            width: 90px;
+        }
+
+        html, body {margin: 0; height: 100%; overflow: hidden;}
+
+        #home {
+            display: inline-block;
+            width: auto;
+        }
+
+        nav {
+            background-color: rgb(31, 31, 47);
+        }
+        body {
+            margin: 0px;
+        }
+
+        #sidebar {
+            background-color: rgb(43, 43, 75);
+            width: 265px;
+            height: 100vh;
+        }
+
+        #messagebox {
+            position: relative;
+            left: 263px;
+            top: -49px;
+        }
+        #messagebox>input[type="text"] {
+            width: 82.4vw;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(55, 56, 74);">
+    <nav>
+        <a href="mainApp.html" id="home"><img src="images/logoText-white.png"></img></a>
+    </nav>
+
+    <main>
+        <div id="sidebar">
+            <div id="groups"></div>
+        </div>
+        <div id="messagebox">
+            <input type="text">
+        </div>
+    </main>
+    <script>
+        import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+        import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+        import { getAuth, signOut } from "firebase/auth";
+        
+            const auth = getAuth();
+            createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in 
+                const user = userCredential.user;
+                // ...
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+            // ..
+            });
+
+            signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in 
+                const user = userCredential.user;
+                // ...
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+            });
+
+            signOut(auth).then(() => {
+                // Sign-out successful.
+            }).catch((error) => {
+                // An error happened.
+            });
+    </script>
+
+    <script type="module">
+
+        // Import the functions you need from the SDKs you need
+      
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+      
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+      
+        // TODO: Add SDKs for Firebase products that you want to use
+      
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+      
+        // Your web app's Firebase configuration
+      
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      
+        const firebaseConfig = {
+      
+          apiKey: "AIzaSyD5BlpUTkrfe55zW0J3-XPL-PEx_JDrQJ0",
+      
+          authDomain: "soform-8fd75.firebaseapp.com",
+      
+          projectId: "soform-8fd75",
+      
+          storageBucket: "soform-8fd75.appspot.com",
+      
+          messagingSenderId: "947230533809",
+      
+          appId: "1:947230533809:web:ca63f2d3d9151224355a90",
+      
+          measurementId: "G-VLWDBHMPQ8"
+      
+        };
+      
+      
+        // Initialize Firebase
+      
+        const app = initializeApp(firebaseConfig);
+      
+        const analytics = getAnalytics(app);
+      
+      </script>
+</body>
+</html>
